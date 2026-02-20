@@ -4,6 +4,7 @@
 # print(requests.__version__)
 # # %%
 
+# %%
 import requests
 
 # Download a web page
