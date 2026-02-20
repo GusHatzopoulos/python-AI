@@ -1,2 +1,5 @@
 import requests
-print(requests.__version__)
+
+# Download a web page
+response = requests.get("https://api.github.com")
+print(response.status_code)  # Should print 200
