@@ -3,4 +3,4 @@ has_licence = True
 drunk = True
 
 can_drive = age >= 16 and has_licence and not drunk
-print(can_drive)
+print = f"That man {can_drive}"
