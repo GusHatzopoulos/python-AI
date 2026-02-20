@@ -1,12 +1,12 @@
-age = 25
-has_licence = False
+# Empty dictionary
+my_dict = {}
 
-my_list = ["Alice", 25, age, True]
+# Dictionary with data
+person = {
+    "name": "Alice",
+    "age": 30,
+    "city": "New York"
+}
 
-my_list[0] = "Dave"
-
-my_list.append("Alice")
-my_list.remove("Alice")
-my_list.insert(0, "Alice")
-
-print(my_list)
+# Different ways to create
+scores = dict(math=95, english=87, science=92)
