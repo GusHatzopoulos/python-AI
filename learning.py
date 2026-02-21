@@ -1,6 +1,8 @@
-# Learning starting from here
-def greet():
-    print("Hello!")
-    print("Hello again!")
-    
-greet()
+def say_goodbye():
+    print("Goodbye!")
+    print("See you later!")
+
+# Call it multiple times
+say_goodbye()
+say_goodbye()
+say_goodbye()
