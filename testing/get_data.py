@@ -10,6 +10,8 @@ week_ago = today - timedelta(days=7)
 start_date = week_ago.strftime("%Y-%m-%d")
 end_date = today.strftime("%Y-%m-%d")
 
+# -----------------------------------------------------
+
 # Your city coordinates (from latlong.net)
 LATITUDE = 40.640064
 LONGITUDE = 22.944420
@@ -26,6 +28,8 @@ url = (
 response = requests.get(url, timeout=30)
 response.raise_for_status()
 data = response.json()
+
+# -----------------------------------------------------
 
 # Defensive checks
 if data.get("error"):
@@ -53,6 +57,8 @@ plt.legend()
 plt.xticks(rotation=45)
 plt.tight_layout()
 plt.show()
+
+# -----------------------------------------------------
 
 # Create data folder if it doesn't exist
 os.makedirs("data", exist_ok=True)
