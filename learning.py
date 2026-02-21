@@ -1,14 +1,17 @@
 import requests
+from datetime import datetime, timedelta
 
-# We need coordinates to get weather data
-latitude = 48.85   # Paris latitude
-longitude = 2.35   # Paris longitude
+# Calculate dates
+today = datetime.now()
+week_ago = today - timedelta(days=7)
 
-# Build the API URL with our parameters
-url = f"https://api.open-meteo.com/v1/forecast?latitude={latitude}&longitude={longitude}&current=temperature_2m"
+# Format dates for API (YYYY-MM-DD)
+start_date = week_ago.strftime("%Y-%m-%d")
+end_date = today.strftime("%Y-%m-%d")
 
-# Make the request
+# Get Paris weather for past week
+url = f"https://api.open-meteo.com/v1/forecast?latitude=48.85&longitude=2.35&start_date={start_date}&end_date={end_date}&daily=temperature_2m_max,temperature_2m_min"
+
 response = requests.get(url)
 data = response.json()
-
-temperature = data["current"]["temperature_2m"]
+print(data)
