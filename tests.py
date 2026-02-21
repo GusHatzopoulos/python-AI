@@ -1,12 +1,10 @@
-# Empty dictionary
-my_dict = {}
+# Empty set (careful!)
+empty_set = set()  # NOT {} - that's a dict!
 
-# Dictionary with data
-person = {
-    "name": "Alice",
-    "age": 30,
-    "city": "New York"
-}
+# Set with values - both ways work
+numbers = {1, 2, 3, 4, 5}
+fruits = set(["apple", "banana", "orange"])
 
-# Different ways to create
-scores = dict(math=95, english=87, science=92)
+# From a list (removes duplicates)
+scores = [85, 90, 85, 92, 90]
+unique_scores = set(scores)  # {85, 90, 92}
