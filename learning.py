@@ -1,3 +1,5 @@
+discount = 20
+
 def calculate_total(price):
     # Default values
     tax_rate = 0.88
