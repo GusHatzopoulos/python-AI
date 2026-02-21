@@ -1,7 +1,17 @@
-def calculate_area(width, height):
-    area = width * height
-    area = area * 1.05
-    return area
-# Store the returned value
-room_area = calculate_area(10, 12)
-print(f"Room size: {room_area} sq. ft.") # Room size is 120 sqft
+def double(number):
+    return number * 2
+
+# # Store in variable
+# result = double(5)
+
+# # Use in expressions
+# total = double(5) + double(3)  # 10 + 6 = 16
+
+# Pass to other functions
+# print(double(10))  # 20
+
+# Use in conditions
+if double(3) > 10:
+    print("Big number!")
+else:
+    print("Result is less than 10.")
