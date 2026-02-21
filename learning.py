@@ -1,12 +1,13 @@
-# Without parameters (inflexible)
-def greet_alice():
-    print("Hello, Alice!")
+def calculate_total(price):
+    # Default values
+    tax_rate = 0.88
+    discount = 10
 
-# With parameters (flexible)
-def greet(name):
-    print(f"Hello, {name}!")
+    # Calculation
+    tax = price * tax_rate
+    final_price = price + tax - discount
 
-# Now it works for anyone
-greet("Alice")
-greet("Bob")
-greet("Charlie")
+    # Print final answer
+    print(f"Total price: ${final_price}")
+
+calculate_total(price = 100)
