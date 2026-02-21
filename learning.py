@@ -1,15 +1,4 @@
-discount = 20
+def add_print(a, b):
+    print(a + b)
 
-def calculate_total(price):
-    # Default values
-    tax_rate = 0.88
-    discount = 10
-
-    # Calculation
-    tax = price * tax_rate
-    final_price = price + tax - discount
-
-    # Print final answer
-    print(f"Total price: ${final_price}")
-
-calculate_total(price = 100)
+add_print(a=5, b=10)
