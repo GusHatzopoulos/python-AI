@@ -1,6 +1,12 @@
-def check_weather():
-    temperature = 16
-    if temperature > 25:
-        print("It's hot!")
-    else:
-        print("Nice weather!")
+# Without parameters (inflexible)
+def greet_alice():
+    print("Hello, Alice!")
+
+# With parameters (flexible)
+def greet(name):
+    print(f"Hello, {name}!")
+
+# Now it works for anyone
+greet("Alice")
+greet("Bob")
+greet("Charlie")
