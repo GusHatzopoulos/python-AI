@@ -11,4 +11,4 @@ url = f"https://api.open-meteo.com/v1/forecast?latitude={latitude}&longitude={lo
 response = requests.get(url)
 data = response.json()
 
-print(data)
+temperature = data["current"]["temperature_2m"]
